@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="bg-warning text-center p-2 mt-4">TODO IO Task</h4>
+                <app-todo-form
+                (emitEventTodo)="getEventOfTodo($event)"
+                ></app-todo-form>
+            </div>
+            <div class="col-md-12 mt-4">
+                <app-todo-lists
+                [getTodos]="todoArray"
+                ></app-todo-lists>
+            </div>
+        </div>
+    </div>
+</div>

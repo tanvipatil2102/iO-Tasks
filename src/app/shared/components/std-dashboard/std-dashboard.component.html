@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="bg-warning text-center p-2">Student Table IO Task</h4>
+        <app-std-form
+        (getStdEve)="onStdEve($event)"
+        ></app-std-form>
+    </div>
+    <div class="col-md-12 mt-4">
+        <app-sts-table 
+        [getStdArr]="stdArray"
+        ></app-sts-table>
+    </div>
+</div>
